@@ -1,0 +1,262 @@
+body {
+  font-size: 18px;
+  font-family: 'Roboto Condensed', Helvetica, sans-serif;
+}
+
+div {
+  display: block;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0px auto;
+}
+
+/*Desktop*/
+
+@media only screen and (min-width:1024px){
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    align-items: center;
+  }
+
+  .mobileblackbox {
+    display: none;
+  }
+}
+
+/*Tablet*/
+
+@media only screen and (max-width:1024px) {
+
+  .mobileblackbox {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    align-items: center;
+  }
+
+  header span {
+    display: inline;
+    font-size: 0.75rem;
+    padding: 0.5rem 0.66rem;
+  }
+
+  .product.pen, .product.watch {
+    width: 47%;
+  }
+  .product.glasses {
+    display: none;
+  }
+}
+
+/*Phone*/
+
+@media only screen and (max-width:470px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    align-items: center;
+  }
+
+  .product.pen {
+    width: 90%;
+  }
+
+  .product.watch, .product.glasses {
+    display: none;
+  }
+
+  .container {
+    width: 470px;
+
+    display: inline-block;
+  }
+
+  .mainbanner {
+    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 12rem !important;
+  }
+
+  .blackbox {
+    display: none;
+  }
+
+  .mobileblackbox {
+    display: block;
+
+  }
+
+  .mobileblackbox h2 {
+    font-size: 0.77rem;
+    padding: 1rem 0 0.3em 2rem;
+  }
+
+  .mobileblackbox h1 {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0 0 1rem 2rem;
+  }
+}
+
+/*Header*/
+
+header {
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  padding: 12px 0px 12px 0.5em;
+}
+
+header img {
+  height: 1.5rem;
+  padding-right: 15px;
+}
+
+header span {
+  display: inline;
+  font-size: 1rem;
+  padding: 0.5rem 0.66rem;
+}
+
+/*Main Banner - Photo, Blackbox text, etc*/
+
+.mainbanner {
+  display: flex;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25em;
+}
+
+.blackbox {
+  background-color: black;
+  width: 20rem;
+  height: auto;
+  color: white;
+  padding: 2rem 3rem;
+  position: absolute;
+  top: 14em;
+  left: 5rem;
+}
+
+.mobileblackbox {
+background-color: black;
+width: 100%;
+color: white;
+position: relative;
+top: 7rem;
+}
+
+.blackbox h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  padding-top: 0.4rem;
+}
+
+.blackbox h2 {
+  font-size: 1rem;
+}
+
+/*Navigation*/
+
+
+nav {
+  width: 100%;
+  background-color: firebrick;
+  padding: 0.75rem;
+  color: white;
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+nav span {
+  padding: 0rem 2.5rem 0rem 2.5rem;
+}
+
+nav a:link, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+/*Wares*/
+
+.products {
+  display: flex;
+  justify-content: space-between;
+  margin: 3em;
+}
+
+.product {
+  width: 30%;
+}
+
+.image {
+  height: 9em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid black;
+  padding: 2em 0px;
+}
+
+.image img {
+  max-width: 8em;
+}
+
+img {
+  border-style: none;
+}
+
+.description {
+  display: block;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 0.5em;
+}
+
+/*Location and Hours*/
+
+.shop-info {
+  display: flex;
+  justify-content: space-around;
+  margin: 3em 0 0 0;
+}
+
+.box {
+  width: 35%;
+}
+
+.box .title {
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 1em 2em;
+  margin-bottom: 1rem;
+}
+
+/*Footer*/
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 5em;
+  margin-top: 4em;
+}
